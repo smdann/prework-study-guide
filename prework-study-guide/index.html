@@ -37,9 +37,16 @@
    
       <section class="card" id="git-section">
         <h2>Git</h2>
+        <p>Git is a version control system that lets you manage and keep track of each version of your project. We access Git via the command line.</p>
+        <p>Git is great for tracking changes locally on your own computer, but to collaborate with other, you need to use another tool called GitHub.</p>
         <ul>
-          <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+          <li>Git commands always start with git</li>
+          <li>git status: checks what branch we are currently on, shows modified files in working directory (staged for your next commit)</li>
+          <li>git checkout -b feature/branch-name: creates a new branch and switches to it</li>
+          <li>git add -A: adds modifications in the current working brach to the staging area (-A flag indicates that we want to add all changes)</li>
+          <li>git commmit -m "descriptive message": commits your staged content as a new commit snapshot</li>
+          <li>git pull origin main: checks if our local branch is in sync with the base branch in GitHub and pulls down any changes</li>
+          <li>git push origin feature/branch-name: pushes the changes we have locally to our remote GitHub branch</li>
         </ul>
    
       </section>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -15,40 +16,73 @@
 
       <section class="card" id="html-section">
         <h2>HTML</h2>
-        <ul>
-          <li>HTML stands for Hypertext Markup Language.</li>
+        <h3>HTML stands for Hypertext Markup Language.</h3>
+       <ul>
           <li>HTML is used to create the structure of a webpage.</li>
           <li>It's made up of elements which work together to provide content and the basic framework for all pages.</li>
+       </ul>
+        <br>
+        <h3>HTML Elements</h3>
+        <ul>
           <li>An element is a type of content on a webpage.</li>
-          <li>Commonly used elements: text elements, image elements, header elements, and list elements.</li>
+          <li>HTML elements are usually composed of an opening tag and a closing tag represented with angle brackets (<>).</li>
+          <li>Commonly used elements include: text elements, image elements, header elements, and list elements.</li>
           <li>The head element contains information about the webpage.</li>
           <li>The body element represents the visible content shown to the user.</li>
         </ul>
-
+        <br>
       </section>
    
       <section class="card" id="css-section">
         <h2>CSS</h2>
-     <ul>
-       <li>Enter your CSS notes here</li>
-     </ul>
-   
+        <h3>CSS stands for Cascading Style Sheets.</h3>
+       <ul>
+          <li>CSS is a programming language used by developers to define how webpage content is presented to users.</li>
+          <li>CSS defines the colors, aesthetics, visual layout, and organization.</li>
+       </ul>
+        <br>
+        <h3>CSS Box Model</h3>
+       <ul>
+         <li>CSS box model: each box consists of margins outside the element, the elements borders, borders, padding, and content.</li>
+         <li>Every HTML element is essentially a box.</li>
+         <li>A margin indicates how much space we want around the outside of an element.</li>
+         <li>Padding indicates how much space we want around the content inside an element.</li>
+       </ul>
+      <br>
+      <h3>CSS Rules</h3>
+       <ul>
+         <li>CSS rule format: selector{property: value; property: value}
+         <li>{property: value} = declaration</li>
+         <li>{property: value; property: value} = declaration block</li>
+         <li>A selector defines the element or attributes to which the rules, or declarations, will apply.</li>
+         <li>Declarations contain two important components: the CSS property we want to apply and the value of the property</li>
+       </ul>
+       <br>
+       <h3>Additional Info</h3>
+       <ul>
+         <li>The "*" selector applies a rule to all elements visible on the page.</li>
+         <li>Two selectors can be combined into a single CSS rule by separating them with a comma, which allows the declarations to affect both selectors.</li>
+         <li>Grouping elements that share the same style together helps us write Do Not Repeat Yourself (DRY) code.</li>
+         <li>When we create an external CSS file, we must link it to the HTML file.</li>
+       </ul>
+       <br>
       </section>
    
       <section class="card" id="git-section">
         <h2>Git</h2>
-        <p>Git is a version control system that lets you manage and keep track of each version of your project. We access Git via the command line.</p>
-        <p>Git is great for tracking changes locally on your own computer, but to collaborate with other, you need to use another tool called GitHub.</p>
-        <ul>
-          <li>Git commands always start with git</li>
-          <li>git status: checks what branch we are currently on, shows modified files in working directory (staged for your next commit)</li>
-          <li>git checkout -b feature/branch-name: creates a new branch and switches to it</li>
-          <li>git add -A: adds modifications in the current working brach to the staging area (-A flag indicates that we want to add all changes)</li>
-          <li>git commmit -m "descriptive message": commits your staged content as a new commit snapshot</li>
-          <li>git pull origin main: checks if our local branch is in sync with the base branch in GitHub and pulls down any changes</li>
-          <li>git push origin feature/branch-name: pushes the changes we have locally to our remote GitHub branch</li>
+      
+       <ul>
+         <li>Git is a version control system that lets you manage and keep track of each version of your project. We access Git via the command line.</li>
+         <li>Git is great for tracking changes locally on your own computer, but to collaborate with others, you need to use another tool called GitHub.</li>
+         <li>Git commands always start with git</li>
+         <li>git status: checks what branch we are currently on, shows modified files in working directory (staged for your next commit)</li>
+         <li>git checkout -b feature/branch-name: creates a new branch and switches to it</li>
+         <li>git add -A: adds modifications in the current working brach to the staging area (-A flag indicates that we want to add all changes)</li>
+         <li>git commmit -m "descriptive message": commits your staged content as a new commit snapshot</li>
+         <li>git pull origin main: checks if our local branch is in sync with the base branch in GitHub and pulls down any changes</li>
+         <li>git push origin feature/branch-name: pushes the changes we have locally to our remote GitHub branch</li>
         </ul>
-   
+        <br>
       </section>
    
       <section class="card" id="javascript-section">
@@ -56,7 +90,7 @@
         <ul>
           <li>Enter your JavaScript notes here</li>
         </ul>
-   
+        <br>
       </section>
 
     </main>

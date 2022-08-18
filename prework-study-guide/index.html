@@ -11,6 +11,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
 
@@ -70,10 +71,14 @@
    
       <section class="card" id="git-section">
         <h2>Git</h2>
-      
+        <h3>What is Git?</h3>
        <ul>
          <li>Git is a version control system that lets you manage and keep track of each version of your project. We access Git via the command line.</li>
          <li>Git is great for tracking changes locally on your own computer, but to collaborate with others, you need to use another tool called GitHub.</li>
+       </ul>
+       <br>
+        <h3>Git Commands</h3>
+       <ul>
          <li>Git commands always start with git</li>
          <li>git status: checks what branch we are currently on, shows modified files in working directory (staged for your next commit)</li>
          <li>git checkout -b feature/branch-name: creates a new branch and switches to it</li>
@@ -83,12 +88,100 @@
          <li>git push origin feature/branch-name: pushes the changes we have locally to our remote GitHub branch</li>
         </ul>
         <br>
+         <h3>Git Flow</h3>
+       <ol>
+         <li>Make sure we are on the correct branch (feature/branch-name) from the command line.</li>
+         <li>Add the changed files in our working directory to the staging area of Git (git add -A).</li>
+         <li>Commit to our repository (git commit -m "descriptive message").</li>
+         <li>Make sure current branch is up to date before opening a pull request (git pull origin main).</li>
+         <li>Push up all of our changes (git push origin feature/branch-name).</li>
+         <li>Naviage to appropriate repository on GitHub and open a new pull request.</li>
+         <li>Set the base branch and comparison branch. Add a title and short description of changes made.</li>
+         <li>Merge pull request or request review from team.</li>
+         <li>Close issue if applicable.</li>
+         <li>Update local branch by by entering (git checkout main) into the command line.</li>
+         <li>Pull the remote main branch into the local main branch by entering (git pull origin main).</li>
+
+       </ol>
       </section>
    
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
+        <h3>What is JavaScript?</h3>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>JavaScript (JS) is a high-level dynamic programming language that allows users to interact with websites.</li>
+          <li>It allows you to power your websites with effects, interactivity, data communication, and more.</li>
+        </ul>
+        <h3>Variable</h3>
+        <ul>
+          <li>A variable is a named container that allows us to store data in our code.</li>
+          <li>To declare a variable, we use the var keyword.</li>
+          <li>After the var keyword, we give the variable a name. This must be a unique name because it's how we'll reference the information stored in the variable in our code.</li>
+          <li>Finally, we use an assignment operator = to assign the specific data that we want stored in our variable.</li>
+          <li>Example: var topics = "HTML, CSS, Git, JavaScript";</li>
+          <li>The topics variable contains a string that includes all of the topics that we're studying (HTML, CSS, Git, JavaScript).</li>
+          <li>All strings are surrounded by quotation marks.</li>
+          <li>Each line of JavaScript code ends with a semicolon.</li>
+        </ul>
+        <h3>console.log</h3>
+        <ul>
+          <li>The word console refers to a test environment that developers use to check out their code.</li>
+          <li>.log() is a method which means a set of instructions that can be executed by a computer.</li>
+          <li>The .log() method will output whatever we add inside the parentheses to the console.</li>
+          <li>For the variable above, entering console.log(topics); will output the value of the variable topics to the web console because we've added it as an argument inside the parentheses.</li>
+          <li>To open Chrome DevTools to view console.log output: Command+Option+I</li>
+        </ul>
+        <h3>Control Flow</h3>
+        <ul>
+          <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li>In JavaScript, code runs from the first statement at the top of the page, down to the last statement at the bottom of the page.</li>
+          <li>Control flow can be interrupted by conditional statements and loops.</li>
+        </ul>
+        <h3>Conditional Statements</h3>
+        <ul>
+          <li>An if statement is a way of introducing decision-making into our code.</li>
+          <li>When using the if statement, code will only execute if the statement meets a condition, or is true.</li>
+          <li>if (condition) { //block of code to be executed if condition is truthy }</li>
+          <li>The strict equality operator (===) checks to see if two values are equal, and returns a Boolean result true if the values are equal and false if the values are not equal.</li>
+        </ul>
+        <h3>Arrays</h3>
+        <ul>
+          <li>An array is a single variable that is used to hold a group of data; typically data that is related in some way.</li>
+          <li>Arrays are useful tools for storing multiple items with different data types in a single variable, but not all arrays must have multiple data types.</li>
+          <li>var studentInfo = ["Lu", 54, true]</li>
+          <li>Each individual data item inside an array is is assigned a unique number, called an index (which starts at 0), that's used to identify the location of the data item inside the array.</li>
+          <li>To access only one item within an array: console.log(variable[index];</li>
+        </ul>
+        <h3>for Loops</h3>
+        <ul>
+          <li>A for loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over.</li>
+          <li>A for loop contains three important statements.</li>
+          <ol>
+            <li>The first statement determines the starting point for our loop. To start at the beginning of the array, we declare a variable x and give it a value of 0.</li>
+              <ul>
+                <li>var x = 0</li>
+              </ul>
+          
+            <li>The second statement is the condition. As long as the number in the variable x is less than the length of the array, the loop will keep running. This will allow the loop to execute one time for each item in the array. We use the length built-in array property to express that condition.</li>
+            <ul>
+              <li>x < variable name.length</li>
+            </ul>
+            <li>The final statement is what allows the array to iterate over each item. Since indices follow a predictable pattern, we know the number increased by 1 each time. The following code is a shortcut way of writing x+1:</li>
+            <ul>
+              <li>x++</li>
+            </ul>
+          </ol>
+        </ul>
+        <h3>Functions</h3>
+        <ul>
+          <li>A function is simply a set of instructions that tells the computer how to perform a certain task.</li>
+          <li>Functions do not automatically execute when the JavaScript file is run. You must call a function by name in order to execute it.</li>
+          <li>To create a function named helloWorld you would use: function helloWorld() { //code block }</li>
+          <li>Math function</li>
+          <ul>
+            <li>To randomly pick an item from an array, we can use math functions to select a random number.</li>
+            <li>Math.random()</li>
+          </ul>
         </ul>
         <br>
       </section>
@@ -98,5 +191,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>

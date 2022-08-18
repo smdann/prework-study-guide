@@ -11,6 +11,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
 
@@ -70,10 +71,14 @@
    
       <section class="card" id="git-section">
         <h2>Git</h2>
-      
+        <h3>What is Git?</h3>
        <ul>
          <li>Git is a version control system that lets you manage and keep track of each version of your project. We access Git via the command line.</li>
          <li>Git is great for tracking changes locally on your own computer, but to collaborate with others, you need to use another tool called GitHub.</li>
+       </ul>
+       <br>
+        <h3>Git Commands</h3>
+       <ul>
          <li>Git commands always start with git</li>
          <li>git status: checks what branch we are currently on, shows modified files in working directory (staged for your next commit)</li>
          <li>git checkout -b feature/branch-name: creates a new branch and switches to it</li>
@@ -83,6 +88,21 @@
          <li>git push origin feature/branch-name: pushes the changes we have locally to our remote GitHub branch</li>
         </ul>
         <br>
+         <h3>Git Flow</h3>
+       <ol>
+         <li>Make sure we are on the correct branch (feature/branch-name) from the command line.</li>
+         <li>Add the changed files in our working directory to the staging area of Git (git add -A).</li>
+         <li>Commit to our repository (git commit -m "descriptive message").</li>
+         <li>Make sure current branch is up to date before opening a pull request (git pull origin main).</li>
+         <li>Push up all of our changes (git push origin feature/branch-name).</li>
+         <li>Naviage to appropriate repository on GitHub and open a new pull request.</li>
+         <li>Set the base branch and comparison branch. Add a title and short description of changes made.</li>
+         <li>Merge pull request or request review from team.</li>
+         <li>Close issue if applicable.</li>
+         <li>Update local branch by by entering (git checkout main) into the command line.</li>
+         <li>Pull the remote main branch into the local main branch by entering (git pull origin main).</li>
+
+       </ol>
       </section>
    
       <section class="card" id="javascript-section">
@@ -98,5 +118,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>

@@ -1,6 +1,8 @@
 # Prework Study Guide Webpage
 
-## This webpage was created to store notes taken during the boot camp prework. It also serves as a way to demonstrate concepts learned and to experiment with the different topics covered. The notes are organized by topic, making it easy to navigate and find what you're looking for. The topics include HTML, CSS, Git, and JavaScript. This handy tool will simplify referencing prework notes, and it can be added to throughout the boot camp to store important notes in one convenient place. 
+## Description
+
+This webpage was created to store notes taken during the boot camp prework. It also serves as a way to demonstrate concepts learned and to experiment with the different topics covered. The notes are organized by topic, making it easy to navigate and find what you're looking for. The topics include HTML, CSS, Git, and JavaScript. This handy tool will simplify referencing prework notes, and it can be added to throughout the boot camp to store important notes in one convenient place. 
 
 ## Installation
 
